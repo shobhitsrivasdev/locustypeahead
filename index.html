@@ -1,0 +1,24 @@
+<html ng-app="app">
+<head>
+  <title>Type Ahead Search</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="autocomplete.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
+
+</head>
+<body>
+
+<header>
+  <h1><span class="thin"></span>Locus Type Ahead Search</h1>
+</header>
+  <div ng-controller="MyCtrl">
+    <div class="main">
+      <autocomplete ng-model="result" attr-placeholder="Search users by Id, Address, Name ...." click-activation="true" data="users" ></autocomplete>
+      <br>
+    </div>
+  </div>
+<script type="text/javascript" src="autocomplete.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
